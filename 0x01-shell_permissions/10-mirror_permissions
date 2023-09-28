@@ -1,2 +1,2 @@
 #!/bin/bash
-./set_mode_to_olleh.sh
+chmod $(stat -c %a olleh) hello
