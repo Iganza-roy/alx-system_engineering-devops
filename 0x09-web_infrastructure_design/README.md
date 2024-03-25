@@ -1,5 +1,5 @@
 # Web infrastructure design
-!(logo)[https://patchmanager.com/wp-content/uploads/IoT-office-1200-x-628.png]
+![logo](https://patchmanager.com/wp-content/uploads/IoT-office-1200-x-628.png)
 
 ## Overview
 This project aims to design a web infrastructure that hosts a website reachable via ```www.foobar.com``` with the IP address ```8.8.8.8.``` Below, we'll explore the components and concepts involved in this infrastructure design.
@@ -61,4 +61,4 @@ To monitor the web server's Queries Per Second (QPS), configure the monitoring t
 ## Conclusion
 This readme provides an overview of the web infrastructure design and the roles of its components.
 
-(@Iganza-roy)[https://github.com/Iganza-roy]
+[@Iganza-roy](https://github.com/Iganza-roy)
