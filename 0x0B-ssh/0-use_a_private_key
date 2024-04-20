@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # uses ssh to connect to your server
-
-s_add="ubuntu@54.146.64.216"
-
-key="~/.ssh/school"
-
-ssh $s_add -i $key
+# s_add="ubuntu@54.146.64.216"
+# key="~/.ssh/school"
+ssh ubuntu@54.146.64.216 -i ~/.ssh/school
