@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
     <h1>Configuration management</h1>
-    <style>
-        img {
-            width: 100%;
-            height: 200px;
-        }
-        ul{
-            list-style: circle;
-        }
-    </style>
     <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/Kskg37qnPTwy2USC5b8721io">
 </head>
 <body>
