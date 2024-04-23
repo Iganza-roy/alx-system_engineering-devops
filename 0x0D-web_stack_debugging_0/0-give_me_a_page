@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# script to initialize server apache
+# bash script to initialize server apache to run and return
+# a page containing Hello Holberton
 /etc/init.d/apache2 start
