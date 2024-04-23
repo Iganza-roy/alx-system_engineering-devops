@@ -1,19 +1,15 @@
 #!/usr/bin/env bash
-# Bash script containing commands to automatically configure a Ubuntu machine
-# Configure your Nginx server so that /redirect_me is redirecting to another page
-# The redirection must be a “301 Moved Permanently"
+# Configure your Nginx server to have a custom 404 page
+# that contains the string Ceci n'est pas une page
 
 sudo apt-get -y update
 sudo apt-get -y install nginx
 echo 'Hello World!' | sudo tee /var/www/html/index.html > /dev/null
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html > /dev/null
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.backup
 Redirect="\\\n\tlocation = /redirect_me {\n\t\t return 301 https://overapi.com/;\n\t}\n"
 sudo sed -i "53i $Redirect" /etc/nginx/sites-available/default
-
-sudo bash -c 'cat <<EOF >> /etc/nginx/sites-available/default
-location = /redirect_me {
-    return 301 https://overapi.com/;
-}
-EOF'
+err_red="\\\n\terror_page 404 /404.html;\n\n\tlocation = /404.html {\n\t\tinternal;\n\t}\n"
+sudo sed -i "53i $err_red" /etc/nginx/sites-available/default
 
 sudo service nginx restart
