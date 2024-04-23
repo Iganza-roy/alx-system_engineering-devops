@@ -3,8 +3,9 @@
 # Nginx should be listening on port 80
 # When querying Nginx at its root / with a GET request (requesting a page)
 # using curl, it must return a page that contains the string Hello World!
-apt-get -y update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo 'Hello World!' > /var/www/html/index.html
-systemctl restart nginx
+sudo apt-get -y update
+sudo apt-get -y install nginx
+sudo ufw allow 'Nginx HTTP'
+echo 'Hello World!' | sudo tee /var/www/html/index.html > /dev/null
+
+service nginx restart
