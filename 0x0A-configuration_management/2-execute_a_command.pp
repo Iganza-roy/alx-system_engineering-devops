@@ -3,6 +3,6 @@
 exec { 'killmenow':
   command   => 'pkill -9 killmenow',
   path      => '/usr/bin:/bin',
-  onlyif    => 'pgrep kilmenow',
+  onlyif    => 'pgrep killmenow',
   provider => shell,
 }
