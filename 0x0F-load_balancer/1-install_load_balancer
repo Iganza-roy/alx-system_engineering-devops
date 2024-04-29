@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# configures a new Ubuntu machine to:
+# Configure HAproxy so that it send traffic to web-01 and web-02
+# Distribute requests using a roundrobin algorithm
+
+sudo apt-get -y update
+sudo apt-get install haproxy -y
+
+sudo tee /etc/haproxy/haproxy.cfg > /dev/null <<EOT
+global
+    daemon
+    maxconn 256
+
+defaults
+    mode http
+    timeout connect 5000ms
+    timeout client 50000ms
+    timeout server 50000ms
+
+frontend Iganza
+        bind *:80
+        default_backend back_servers
+
+backend back_servers
+        balance roundrobin
+        server 427316-web-01 54.146.64.216 check
+        server 427316-web-02 35.174.213.136 check
+EOT
+
+# Test configuration
+sudo haproxy -c -f /etc/haproxy/haproxy.cfg
+
+# Start HAproxy
+sudo systemctl start haproxy
+
+# Enable start on boot
+sudo systemctl enable haproxy
