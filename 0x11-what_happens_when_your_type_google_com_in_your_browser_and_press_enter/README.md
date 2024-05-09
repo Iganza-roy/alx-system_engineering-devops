@@ -1,5 +1,5 @@
 # What happens when you type google.com in your browser and press Enter
-![logo](https://www.computerworld.com/wp-content/uploads/2024/03/internet_web_browser_https_url_address_bar_by_cybraingettyimages-1174404944_2400x1600-100854834-orig.jpg?resize=1536%2C1024&quality=50&strip=all)
+<img src="https://www.computerworld.com/wp-content/uploads/2024/03/internet_web_browser_https_url_address_bar_by_cybraingettyimages-1174404944_2400x1600-100854834-orig.jpg?resize=1536%2C1024&quality=50&strip=all">
 
 This directory contains my tasks on the 0x11 project
 
