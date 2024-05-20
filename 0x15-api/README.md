@@ -11,4 +11,4 @@ Most operating environments, such as MS-Windows, provide APIs, allowing programm
 
 **Read More**: Interested in learning more about software engineering? ![https://academy.techrepublic.com/search?utf8=%E2%9C%93&query=Engineer](Visit the TechRepublic Academy).
 
-**credit:** !(https://www.webopedia.com/definitions/api/) [API(Application Program Interface)]
+**credit:** <li href="https://www.webopedia.com/definitions/api/">[API(Application Program Interface)]</li>
