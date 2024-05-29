@@ -10,8 +10,6 @@ A shell script is used to run a bunch of commands. Shell scripts are very useful
 
  - [ALX](https://www.bing.com/ck/a?!&&p=34548abe14e954a1JmltdHM9MTcwMzI4OTYwMCZpZ3VpZD0wMzYwYmU4OC1lM2YzLTZmNGQtMjAwZi1hZDEzZTI2NTZlNWUmaW5zaWQ9NTE5NQ&ptn=3&ver=2&hsh=3&fclid=0360be88-e3f3-6f4d-200f-ad13e2656e5e&psq=alx&u=a1aHR0cHM6Ly93d3cuYWx4YWZyaWNhLmNvbS8&ntb=1)
 
-
-
 ## Appendix
 
 man or help:
