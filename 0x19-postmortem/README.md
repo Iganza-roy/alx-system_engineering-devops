@@ -24,7 +24,7 @@ The root cause was identified as a database overload due to a sudden spike in da
 - **11:15 AM:** Indexing optimization process initiated.
 - **11:45 AM:** Database indexing completed, data verification process started.
 - **12:00 PM:** Issue resolved, system performance returned to normal, and data integrity restored.
-- 
+
 ### Root Cause and Resolution
 #### Root Cause:
 The system encountered a high volume of data load during the peak registration period. The database, designed with default indexing configurations, failed to handle the surge efficiently. This led to delayed read/write operations, causing data scrambling as simultaneous update requests were processed incorrectly.
