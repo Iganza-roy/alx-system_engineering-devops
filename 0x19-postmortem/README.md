@@ -12,18 +12,19 @@ The School Management System experienced an outage where student data became scr
 The root cause was identified as a database overload due to a sudden spike in data load during peak registration hours, compounded by an unoptimized database indexing system.
 
 ### Timeline
-**09:00 AM:** Issue detected via automated monitoring alert indicating unusual database activity.
-**09:05 AM:** Engineers began investigating the database logs and noticed a spike in data load.
-**09:15 AM:** Initial hypothesis suggested a potential DDoS attack; network traffic was monitored.
-**09:30 AM:** Network traffic ruled out as the cause; focus shifted to the database system.
-**09:45 AM:** Database indexing and query performance were analyzed.
-**10:00 AM:** Misleading path: Engineers suspected a configuration issue in the application server.
-**10:15 AM:** Application server configuration checked and found normal.
-**10:30 AM:** Incident escalated to the Database Management Team.
-**11:00 AM:** Detailed analysis by Database Management Team revealed unoptimized indexing causing delays in data retrieval and update operations.
-**11:15 AM:** Indexing optimization process initiated.
-**11:45 AM:** Database indexing completed, data verification process started.
-**12:00 PM:** Issue resolved, system performance returned to normal, and data integrity restored.
+- **09:00 AM:** Issue detected via automated monitoring alert indicating unusual database activity.
+- **09:05 AM:** Engineers began investigating the database logs and noticed a spike in data load.
+- **09:15 AM:** Initial hypothesis suggested a potential DDoS attack; network traffic was monitored.
+- **09:30 AM:** Network traffic ruled out as the cause; focus shifted to the database system.
+- **09:45 AM:** Database indexing and query performance were analyzed.
+- **10:00 AM:** Misleading path: Engineers suspected a configuration issue in the application server.
+- **10:15 AM:** Application server configuration checked and found normal.
+- **10:30 AM:** Incident escalated to the Database Management Team.
+- **11:00 AM:** Detailed analysis by Database Management Team revealed unoptimized indexing causing delays in data retrieval and update operations.
+- **11:15 AM:** Indexing optimization process initiated.
+- **11:45 AM:** Database indexing completed, data verification process started.
+- **12:00 PM:** Issue resolved, system performance returned to normal, and data integrity restored.
+- 
 ### Root Cause and Resolution
 #### Root Cause:
 The system encountered a high volume of data load during the peak registration period. The database, designed with default indexing configurations, failed to handle the surge efficiently. This led to delayed read/write operations, causing data scrambling as simultaneous update requests were processed incorrectly.
